@@ -1,4 +1,5 @@
 #include "MainLayer.h"
+#include "StatePatternLayer.h"
 
 
 bool MainLayer::init(){
@@ -6,8 +7,16 @@ bool MainLayer::init(){
     {
         return false;
     }
+    
+    addPatterns();
     return true;
 }
+
+void MainLayer::addPatterns(){
+    auto layer = StatePatternLayer::create();
+    this->addChild(layer);
+}
+
 
 //bool HelloWorld::init()
 //{

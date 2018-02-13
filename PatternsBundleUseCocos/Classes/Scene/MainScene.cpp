@@ -1,4 +1,5 @@
 #include "MainScene.h"
+#include "MainLayer.h"
 
 bool MainScene::init()
 {
@@ -6,5 +7,7 @@ bool MainScene::init()
     {
         return false;
     }
+    
+    this->addChild(MainLayer::create());
     return true;
 }
