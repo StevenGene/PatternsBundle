@@ -3,12 +3,11 @@
 
 #include "CommonInclude.h"
 
-class HelloWorld : public cocos2d::Scene
+class MainScene : public Scene
 {
 public:
-    static cocos2d::Scene* createScene();
+    CREATE_FUNC(MainScene);
     virtual bool init();
-    CREATE_FUNC(HelloWorld);
 };
 
 #endif // __MAIN_SCENE_H__

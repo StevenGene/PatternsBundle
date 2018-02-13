@@ -1,20 +1,13 @@
-#ifndef __HELLOWORLD_SCENE_H__
-#define __HELLOWORLD_SCENE_H__
+#ifndef __MAIN_LAYER_H__
+#define __MAIN_LAYER_H__
 
-#include "cocos2d.h"
+#include "CommonInclude.h"
 
-class HelloWorld : public cocos2d::Scene
+class MainLayer : public Layer
 {
 public:
-    static cocos2d::Scene* createScene();
-
+    CREATE_FUNC(MainLayer);
     virtual bool init();
-    
-    // a selector callback
-    void menuCloseCallback(cocos2d::Ref* pSender);
-    
-    // implement the "static create()" method manually
-    CREATE_FUNC(HelloWorld);
 };
 
-#endif // __HELLOWORLD_SCENE_H__
+#endif // __MAIN_LAYER_H__

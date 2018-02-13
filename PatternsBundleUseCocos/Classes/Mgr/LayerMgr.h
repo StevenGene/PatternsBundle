@@ -1,20 +1,15 @@
 #ifndef __LAYER_MGR_H__
 #define __LAYER_MGR_H__
 
-#include "cocos2d.h"
+#include "CommonInclude.h"
 
-class LayerMgr : public Ref
+class LayerMgr
 {
 public:
-    static cocos2d::Scene* createScene();
-
-    virtual bool init();
-    
-    // a selector callback
-    void menuCloseCallback(cocos2d::Ref* pSender);
-    
-    // implement the "static create()" method manually
-    CREATE_FUNC(LayerMgr);
+    static LayerMgr* getInstance();
+    void initScene();
+private:
+    Scene *_mainScene;
 };
 
 #endif // __LAYER_MGR_H__
