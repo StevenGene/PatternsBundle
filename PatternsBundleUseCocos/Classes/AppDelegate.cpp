@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
+#include "platform/CCFileUtils.h"
 #include "LayerMgr.h"
+#include "CommonInclude.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -92,7 +94,17 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     register_all_packages();
-
+    
+    // add search paths
+    string wPath = FileUtils::getInstance()->getWritablePath();
+    vector<string> vecPath;
+    vecPath.push_back("Animation");
+    vecPath.push_back("Common");
+    for (int k = 0; k < vecPath.size(); k++) {
+        FileUtils::getInstance()->addSearchPath(vecPath[k]);
+    }
+    
+    // init all ui
     LayerMgr::getInstance()->initScene();
 
     return true;

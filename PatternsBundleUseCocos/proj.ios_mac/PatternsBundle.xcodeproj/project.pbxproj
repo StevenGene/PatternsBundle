@@ -59,6 +59,7 @@
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		590F8BCB20333F59007DCEA0 /* StatePatternLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 590F8BC920333F59007DCEA0 /* StatePatternLayer.cpp */; };
+		590F8BD3203479B6007DCEA0 /* CommonUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 590F8BD1203479B6007DCEA0 /* CommonUtils.cpp */; };
 		595E704E20333B0700A2FE8D /* Animation in Resources */ = {isa = PBXBuildFile; fileRef = 595E704C20333B0700A2FE8D /* Animation */; };
 		595E704F20333B0700A2FE8D /* Common in Resources */ = {isa = PBXBuildFile; fileRef = 595E704D20333B0700A2FE8D /* Common */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
@@ -169,6 +170,8 @@
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		590F8BC920333F59007DCEA0 /* StatePatternLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatePatternLayer.cpp; sourceTree = "<group>"; };
 		590F8BCA20333F59007DCEA0 /* StatePatternLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePatternLayer.h; sourceTree = "<group>"; };
+		590F8BD1203479B6007DCEA0 /* CommonUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonUtils.cpp; sourceTree = "<group>"; };
+		590F8BD2203479B6007DCEA0 /* CommonUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CommonUtils.hpp; sourceTree = "<group>"; };
 		595E704C20333B0700A2FE8D /* Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Animation; sourceTree = "<group>"; };
 		595E704D20333B0700A2FE8D /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Common; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -390,6 +393,8 @@
 			isa = PBXGroup;
 			children = (
 				CE9BFAAA2032D1F700261030 /* CommonInclude.h */,
+				590F8BD1203479B6007DCEA0 /* CommonUtils.cpp */,
+				590F8BD2203479B6007DCEA0 /* CommonUtils.hpp */,
 			);
 			path = Ext;
 			sourceTree = "<group>";
@@ -594,6 +599,7 @@
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				CE9BFABA2032D1F700261030 /* MainScene.cpp in Sources */,
+				590F8BD3203479B6007DCEA0 /* CommonUtils.cpp in Sources */,
 				CE9BFAB82032D1F700261030 /* MainLayer.cpp in Sources */,
 				CE9BFAB62032D1F700261030 /* LayerMgr.cpp in Sources */,
 			);
@@ -633,6 +639,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -666,6 +673,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

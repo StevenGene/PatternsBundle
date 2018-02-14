@@ -2,7 +2,10 @@
 #define __COMMON_INCLUDE_H__
 
 #include "cocos2d.h"
-USING_NS_CC;
+#include "ui/CocosGUI.h"
 
+using namespace std;
+USING_NS_CC;
+using namespace ui;
 
 #endif // __COMMON_INCLUDE_H__
