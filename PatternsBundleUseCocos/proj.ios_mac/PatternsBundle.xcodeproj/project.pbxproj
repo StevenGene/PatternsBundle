@@ -58,7 +58,6 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
-		590F8BCB20333F59007DCEA0 /* StatePatternLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 590F8BC920333F59007DCEA0 /* StatePatternLayer.cpp */; };
 		590F8BD3203479B6007DCEA0 /* CommonUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 590F8BD1203479B6007DCEA0 /* CommonUtils.cpp */; };
 		595E704E20333B0700A2FE8D /* Animation in Resources */ = {isa = PBXBuildFile; fileRef = 595E704C20333B0700A2FE8D /* Animation */; };
 		595E704F20333B0700A2FE8D /* Common in Resources */ = {isa = PBXBuildFile; fileRef = 595E704D20333B0700A2FE8D /* Common */; };
@@ -72,6 +71,8 @@
 		CE9BFAB92032D1F700261030 /* MainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9BFAB12032D1F700261030 /* MainLayer.cpp */; };
 		CE9BFABA2032D1F700261030 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9BFAB32032D1F700261030 /* MainScene.cpp */; };
 		CE9BFABB2032D1F700261030 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9BFAB32032D1F700261030 /* MainScene.cpp */; };
+		CEA0DB512048082F00F14B5A /* StatePatternLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA0DB4C2048082F00F14B5A /* StatePatternLayer.cpp */; };
+		CEA0DB522048082F00F14B5A /* StrategyLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA0DB4F2048082F00F14B5A /* StrategyLayer.cpp */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
@@ -122,7 +123,7 @@
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* PatternsBundle-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PatternsBundle-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* AgainstZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgainstZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		294D0D631D0D56D500F7F5D4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
@@ -168,8 +169,6 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		590F8BC920333F59007DCEA0 /* StatePatternLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatePatternLayer.cpp; sourceTree = "<group>"; };
-		590F8BCA20333F59007DCEA0 /* StatePatternLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePatternLayer.h; sourceTree = "<group>"; };
 		590F8BD1203479B6007DCEA0 /* CommonUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonUtils.cpp; sourceTree = "<group>"; };
 		590F8BD2203479B6007DCEA0 /* CommonUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CommonUtils.hpp; sourceTree = "<group>"; };
 		595E704C20333B0700A2FE8D /* Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Animation; sourceTree = "<group>"; };
@@ -185,6 +184,10 @@
 		CE9BFAB22032D1F700261030 /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLayer.h; sourceTree = "<group>"; };
 		CE9BFAB32032D1F700261030 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
 		CE9BFAB42032D1F700261030 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		CEA0DB4C2048082F00F14B5A /* StatePatternLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatePatternLayer.cpp; sourceTree = "<group>"; };
+		CEA0DB4D2048082F00F14B5A /* StatePatternLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatePatternLayer.h; sourceTree = "<group>"; };
+		CEA0DB4F2048082F00F14B5A /* StrategyLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StrategyLayer.cpp; sourceTree = "<group>"; };
+		CEA0DB502048082F00F14B5A /* StrategyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyLayer.h; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -255,7 +258,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* PatternsBundle-mobile.app */,
+				1D6058910D05DD3D006BFB54 /* AgainstZ.app */,
 				5087E76F17EB910900C73F5D /* PatternsBundle-desktop.app */,
 			);
 			name = Products;
@@ -411,18 +414,10 @@
 		CE9BFAAE2032D1F700261030 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
-				CE9BFAAF2032D1F700261030 /* StatePattern */,
+				CEA0DB4B2048082F00F14B5A /* State */,
+				CEA0DB4E2048082F00F14B5A /* Strategy */,
 			);
 			path = Patterns;
-			sourceTree = "<group>";
-		};
-		CE9BFAAF2032D1F700261030 /* StatePattern */ = {
-			isa = PBXGroup;
-			children = (
-				590F8BC920333F59007DCEA0 /* StatePatternLayer.cpp */,
-				590F8BCA20333F59007DCEA0 /* StatePatternLayer.h */,
-			);
-			path = StatePattern;
 			sourceTree = "<group>";
 		};
 		CE9BFAB02032D1F700261030 /* Scene */ = {
@@ -443,12 +438,30 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		CEA0DB4B2048082F00F14B5A /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0DB4C2048082F00F14B5A /* StatePatternLayer.cpp */,
+				CEA0DB4D2048082F00F14B5A /* StatePatternLayer.h */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CEA0DB4E2048082F00F14B5A /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0DB4F2048082F00F14B5A /* StrategyLayer.cpp */,
+				CEA0DB502048082F00F14B5A /* StrategyLayer.h */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* PatternsBundle-mobile */ = {
+		1D6058900D05DD3D006BFB54 /* AgainstZ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PatternsBundle-mobile" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AgainstZ" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -459,9 +472,9 @@
 			dependencies = (
 				1AC6FB25180E99E1004C840B /* PBXTargetDependency */,
 			);
-			name = "PatternsBundle-mobile";
+			name = AgainstZ;
 			productName = iphone;
-			productReference = 1D6058910D05DD3D006BFB54 /* PatternsBundle-mobile.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* AgainstZ.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5087E73D17EB910900C73F5D /* PatternsBundle-desktop */ = {
@@ -510,7 +523,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* PatternsBundle-mobile */,
+				1D6058900D05DD3D006BFB54 /* AgainstZ */,
 				5087E73D17EB910900C73F5D /* PatternsBundle-desktop */,
 			);
 		};
@@ -593,13 +606,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				590F8BCB20333F59007DCEA0 /* StatePatternLayer.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				CE9BFABA2032D1F700261030 /* MainScene.cpp in Sources */,
+				CEA0DB522048082F00F14B5A /* StrategyLayer.cpp in Sources */,
 				590F8BD3203479B6007DCEA0 /* CommonUtils.cpp in Sources */,
+				CEA0DB512048082F00F14B5A /* StatePatternLayer.cpp in Sources */,
 				CE9BFAB82032D1F700261030 /* MainLayer.cpp in Sources */,
 				CE9BFAB62032D1F700261030 /* LayerMgr.cpp in Sources */,
 			);
@@ -815,7 +829,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PatternsBundle-mobile" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AgainstZ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,

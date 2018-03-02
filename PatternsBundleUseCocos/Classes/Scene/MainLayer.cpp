@@ -1,6 +1,6 @@
 #include "MainLayer.h"
 #include "StatePatternLayer.h"
-
+#include "StrategyLayer.h"
 
 bool MainLayer::init(){
     if ( !Layer::init() )
@@ -14,7 +14,10 @@ bool MainLayer::init(){
 
 void MainLayer::addPatterns(){
     auto layer = StatePatternLayer::create();
-    this->addChild(layer);
+//    this->addChild(layer);
+    
+    auto strategyLayer = StrategyLayer::create();
+    this->addChild(strategyLayer);
 }
 
 

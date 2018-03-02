@@ -35,22 +35,7 @@ bool StatePatternLayer::init(){
     
     _state = SoldierNormalState::create();
     _state->retain();
-    
-    auto s = Sprite::create("CloseSelected.png");
-    CCLOG("s:%d",s->getReferenceCount());
-    this->addChild(s);
-    CCLOG("after add s:%d",s->getReferenceCount());
-    s->retain();
-    CCLOG("after retain s:%d",s->getReferenceCount());
 
-    s->release();
-    CCLOG("after release s:%d",s->getReferenceCount());
-
-    s->removeFromParent();
-    CCLOG("after remove from parent s:%d",s->getReferenceCount());
-    s->release();
-
-    
     return true;
 }
 
@@ -72,16 +57,18 @@ void StatePatternLayer::_onTouchEvent(cocos2d::Ref* sender, cocos2d::ui::Widget:
             if (_state) {
                 auto tmpState = _state->handleInput(btnType);
                 if (tmpState) {
-                    CCLOG("rc:%ud",_state->getReferenceCount());
+                    CCLOG("rc:%ld",_state->getReferenceCount());
+
                     _state->release();
-                    CCLOG("rc:%ud",_state->getReferenceCount());
+
+                    CCLOG("rc:%ld",_state->getReferenceCount());
                     CCLOG("-------------");
 
                     _state = tmpState;
-                    CCLOG("rc:%ud",_state->getReferenceCount());
+                    CCLOG("rc:%ld",_state->getReferenceCount());
 
                     _state->retain();
-                    CCLOG("rc:%ud",_state->getReferenceCount());
+                    CCLOG("rc:%ld",_state->getReferenceCount());
 
                 }
             }
